@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gemastik.toilet.RegisterActivity">
+
+    <ListView
+        android:id="@+id/devicesFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:alpha="0.7"
+        android:visibility="invisible">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/formRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:text="Daftar SmartLet"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="5dp"
+            android:background="#ffffff"
+            android:hint="Nama Lengkap"
+            android:lines="1" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:hint="Email"
+            android:lines="1" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:hint="Username"
+            android:lines="1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:lines="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="6">
+            <ImageView
+                android:id="@+id/btnFingerprint"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:background="#07b9d4"
+                android:padding="3dp"
+                android:src="@drawable/fingerprint"/>
+            <EditText
+                android:id="@+id/fingerprint"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:paddingLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:enabled="false"
+                android:background="#ffffff"
+                android:lines="1"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="13dp"
+            android:text="Daftar"
+            android:background="#ffffff"
+            android:alpha="0.6"/>
+    </LinearLayout>
+
+</RelativeLayout>

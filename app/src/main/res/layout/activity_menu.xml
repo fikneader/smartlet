@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gemastik.toilet.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_centerInParent="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="135dp">
+
+            <ImageView
+                android:id="@+id/imgbtnInfo"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/b"/>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="135dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+
+                <ImageView
+                    android:id="@+id/imgbtnRiwayat"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/c"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="135dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/imgbtnHasil"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/d"/>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/imgbtnPanduan"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:src="@drawable/e"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
