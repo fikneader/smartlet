@@ -17,17 +17,59 @@
         android:layout_centerInParent="true">
 
         <android.support.v7.widget.CardView
+            android:id="@+id/infoBtn"
             android:layout_width="match_parent"
             android:layout_height="135dp">
 
-            <ImageView
-                android:id="@+id/imgbtnInfo"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:padding="10dp"
-                android:layout_gravity="center"
-                android:src="@drawable/b"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_user"
+                    android:padding="18dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:text="Condition info"
+                    android:layout_gravity="center_vertical|center_horizontal"/>
+            </LinearLayout>
 
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/recordBtn"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_record"
+                    android:padding="18dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="Records"
+                    android:layout_gravity="center_vertical|center_horizontal"/>
+            </LinearLayout>
         </android.support.v7.widget.CardView>
 
         <LinearLayout
@@ -37,47 +79,63 @@
             android:orientation="horizontal"
             android:weightSum="2">
             <android.support.v7.widget.CardView
+                android:id="@+id/colorBtn"
                 android:layout_width="0dp"
                 android:layout_height="135dp"
                 android:layout_weight="1"
                 android:layout_marginRight="5dp">
 
-                <ImageView
-                    android:id="@+id/imgbtnRiwayat"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/c"/>
-
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_color"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="Info"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:textAlignment="center"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/guideBtn"
                 android:layout_width="0dp"
                 android:layout_height="135dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="5dp">
 
-                <ImageView
-                    android:id="@+id/imgbtnHasil"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/d"/>
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_guide"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="Hints"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:textAlignment="center"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
 
             </android.support.v7.widget.CardView>
         </LinearLayout>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_marginTop="10dp">
-            <ImageView
-                android:id="@+id/imgbtnPanduan"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:padding="12dp"
-                android:layout_gravity="center"
-                android:src="@drawable/e"/>
-        </android.support.v7.widget.CardView>
     </LinearLayout>
 </RelativeLayout>

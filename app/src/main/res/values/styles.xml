@@ -13,4 +13,12 @@
     <style name="CircularProgress" parent="Theme.AppCompat.Light">
         <item name="colorAccent">#61caa6</item>
     </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <item name="colorPrimary">#07b9d4</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorPrimaryDark">#068fa4</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 </resources>

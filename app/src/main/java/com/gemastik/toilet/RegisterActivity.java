@@ -65,13 +65,13 @@ public class RegisterActivity extends AppCompatActivity {
                 }else{
                     new AlertDialog.Builder(RegisterActivity.this)
                             .setTitle("Scan Bluetooth")
-                            .setMessage("Scan bluetooth sekarang ??")
-                            .setPositiveButton("Tidak", new DialogInterface.OnClickListener() {
+                            .setMessage("Activate Bluetooth ??")
+                            .setPositiveButton("No", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
 
                                 }
                             })
-                            .setNegativeButton("Ya", new DialogInterface.OnClickListener() {
+                            .setNegativeButton("Yes", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     find();
                                 }

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "216843842525",
+    "firebase_url": "https://smartlet-632ad.firebaseio.com",
+    "project_id": "smartlet-632ad",
+    "storage_bucket": "smartlet-632ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216843842525:android:5d8c9d7915ea0327",
+        "android_client_info": {
+          "package_name": "com.gemastik.toilet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216843842525-0gg5grc6267gvdsm1kjr5qai3m4dt7ev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gemastik.toilet",
+            "certificate_hash": "ffb34ea737899ba5b7dd880f174a6adb44594e39"
+          }
+        },
+        {
+          "client_id": "216843842525-ra448bs1o69563hqel875omelcr8jhst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt2foeGeXrd-_pRJX2kMpyZNZk7Jko55Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216843842525-ra448bs1o69563hqel875omelcr8jhst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

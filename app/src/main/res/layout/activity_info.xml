@@ -1,117 +1,361 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     tools:context="com.gemastik.toilet.InfoActivity">
 
     <LinearLayout
+        android:id="@+id/main_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:orientation="horizontal"
-        android:weightSum="3">
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="220dp"
-            android:layout_weight="1"
-            android:src="@drawable/dehidrasi" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="220dp"
-            android:gravity="center_horizontal|center_vertical"
-            android:layout_weight="2"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textSize="22dp"
-                android:textStyle="bold"
-                android:text="Cairan dalam tubuhmu"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="50dp"
-                android:textColor="@color/colorAccent"
-                android:text="47%"/>
-        </LinearLayout>
-    </LinearLayout>
-
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        app:cardBackgroundColor="@android:color/white"
-        app:cardCornerRadius="5dp">
-
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
+            android:layout_marginTop="42dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/dehidrasi" />
+            <RelativeLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textSize="22dp"
-                android:textStyle="bold"
-                android:text="Saran:"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:textSize="18dp"
-                android:text="Kamu harus minum air sebanyak"/>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center_horizontal">
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/usernameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hernawan"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_alignBaseline="@+id/textView"
+                    android:layout_alignBottom="@+id/textView"
+                    android:layout_toRightOf="@+id/textView"
+                    android:layout_toEndOf="@+id/textView" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Hallo "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Condition"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/conditionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:layout_below="@+id/textView3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:textColor="@color/colorAccent"
-                    android:text="3 "/>
+                    android:text="Recomendation"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_below="@+id/conditionText"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/textView6" />
                 <TextView
+                    android:id="@+id/recomendationText"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#333"
+                    android:textStyle="bold"
+                    android:text="Drinking 1/2 liter water in 1 hour."
+                    android:layout_below="@+id/textView6"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/conditionText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="6">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/status1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="3dp"
+                    android:src="@color/colorLevel1"
+                    android:background="@color/colorAccent"/>
+                <ImageView
+                    android:id="@+id/statusArrow1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="30dp"
-                    android:text="gelas"/>
+                    android:visibility="gone"
+                    android:src="@drawable/ic_arrow_up"/>
             </LinearLayout>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:text="dalam kurun waktu"/>
-
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center_horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="30dp"
-                    android:textColor="@color/colorAccent"
-                    android:text="45 "/>
-                <TextView
-                    android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/status2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="3dp"
+                    android:src="@color/colorLevel2"
+                    android:background="@color/colorAccent"/>
+                <ImageView
+                    android:id="@+id/statusArrow2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="30dp"
-                    android:text="menit"/>
+                    android:visibility="gone"
+                    android:src="@drawable/ic_arrow_up"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/status3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="3dp"
+                    android:src="@color/colorLevel3"
+                    android:background="@color/colorAccent"/>
+                <ImageView
+                    android:id="@+id/statusArrow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_arrow_up"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/status4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="3dp"
+                    android:src="@color/colorLevel4"
+                    android:background="@color/colorAccent"/>
+                <ImageView
+                    android:id="@+id/statusArrow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_arrow_up"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/status5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="3dp"
+                    android:src="@color/colorLevel5"
+                    android:background="@color/colorAccent"/>
+                <ImageView
+                    android:id="@+id/statusArrow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_arrow_up"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/status6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="3dp"
+                    android:src="@color/colorLevel6"
+                    android:background="@color/colorAccent"/>
+                <ImageView
+                    android:id="@+id/statusArrow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_arrow_up"/>
             </LinearLayout>
         </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last checking data"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#444"
+                    android:id="@+id/textView5"
+                    android:layout_alignParentStart="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView5"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:layout_alignParentStart="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_poll"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/imageView2" />
+                        <TextView
+                            android:id="@+id/levelText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Dehydration Level 1"
+                            android:textColor="#444"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/imageView2"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_trending_up_grey600_48dp"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/imageView21" />
+                        <TextView
+                            android:id="@+id/levelText21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Glucose 129 (mg/gl)"
+                            android:textColor="#444"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/imageView21"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_place"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/imageView3" />
+                        <TextView
+                            android:id="@+id/locationText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="LAB FTTH"
+                            android:textColor="#444"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/imageView3"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_event"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/imageView4" />
+                        <TextView
+                            android:id="@+id/timeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="#444"
+                            android:text="29 Mar 2017, 16:29"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/imageView4"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
 
-    </android.support.v7.widget.CardView>
-</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
